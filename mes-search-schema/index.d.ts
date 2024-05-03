@@ -94,6 +94,10 @@ export interface SearchResultTestSchema {
    * ADI3 grade assigned for a pass outcome
    */
   grade?: string;
+  /**
+   * Upload status of the test
+   */
+  autosave: number;
 }
 /**
  * Details of the individual's name

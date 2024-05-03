@@ -8,7 +8,8 @@
     "candidateName",
     "applicationReference",
     "category",
-    "activityCode"
+    "activityCode",
+    "autosave"
   ],
   "properties": {
     "costCode": {
@@ -45,6 +46,10 @@
     "grade": {
       "description": "ADI3 grade assigned for a pass outcome",
       "type": "string"
+    },
+    "autosave": {
+      "description": "Upload status of the test",
+      "type": "integer"
     }
   },
   "definitions": {
