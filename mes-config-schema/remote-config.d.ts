@@ -48,6 +48,7 @@ export interface RemoteConfig {
   user: User;
   driver?: Driver;
   vehicle?: Vehicle;
+  mot?: Mot;
   refData?: RefData;
   /**
    * The number of milliseconds that we wait before a request times out in the App
@@ -183,6 +184,15 @@ export interface Vehicle {
    * Url which is used for retrieving Tax and MOT data about a vehicle
    */
   taxMotUrl: string;
+}
+/**
+ * mot related configuration properties
+ */
+export interface Mot {
+  /**
+   * Url which is used for retrieving MOT history data
+   */
+  motHistoryUrl: string;
 }
 /**
  * Reference data configuration properties
