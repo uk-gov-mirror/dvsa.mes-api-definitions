@@ -204,6 +204,20 @@
         "taxMotUrl"
       ]
     },
+    "mot": {
+      "description": "mot related configuration properties",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "taxMotUrl": {
+          "description": "Url which is used for retrieving MOT history data",
+          "type": "string"
+        }
+      },
+      "required": [
+        "motHistoryUrl"
+      ]
+    },
     "refData": {
       "description": "Reference data configuration properties",
       "type": "object",
@@ -274,6 +288,9 @@
     },
     "vehicle": {
       "$ref": "#/definitions/vehicle"
+    },
+    "mot": {
+      "$ref": "#/definitions/mot"
     },
     "refData": {
       "$ref": "#/definitions/refData"
