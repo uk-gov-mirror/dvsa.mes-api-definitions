@@ -192,7 +192,7 @@ export interface Mot {
   /**
    * Url which is used for retrieving MOT history data
    */
-  taxMotUrl?: string;
+  motHistoryUrl: string;
 }
 /**
  * Reference data configuration properties

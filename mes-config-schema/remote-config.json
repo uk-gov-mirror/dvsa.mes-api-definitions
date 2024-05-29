@@ -209,7 +209,7 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "taxMotUrl": {
+        "motHistoryUrl": {
           "description": "Url which is used for retrieving MOT history data",
           "type": "string"
         }
