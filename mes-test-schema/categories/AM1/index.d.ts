@@ -628,7 +628,7 @@ export interface TestSummary {
   /**
    * Number of the route that was taken during the test
    */
-  routeNumber?: number;
+  routeNumber?: 88;
   /**
    * Physical appearance resembles a true likeness to provided ID
    */
