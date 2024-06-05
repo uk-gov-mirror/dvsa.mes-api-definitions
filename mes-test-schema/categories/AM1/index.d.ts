@@ -80,6 +80,7 @@ export type ActivityCode =
   | "5"
   | "6"
   | "11"
+  | "12"
   | "20"
   | "21"
   | "22"
@@ -627,7 +628,7 @@ export interface TestSummary {
   /**
    * Number of the route that was taken during the test
    */
-  routeNumber?: 88;
+  routeNumber?: number;
   /**
    * Physical appearance resembles a true likeness to provided ID
    */
