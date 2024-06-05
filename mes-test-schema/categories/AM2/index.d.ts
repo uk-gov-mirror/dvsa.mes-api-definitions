@@ -66,6 +66,7 @@ export type ActivityCode =
   | "5"
   | "6"
   | "11"
+  | "12"
   | "20"
   | "21"
   | "22"
