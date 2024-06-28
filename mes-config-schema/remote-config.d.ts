@@ -142,9 +142,13 @@ export interface Tests {
    */
   testSubmissionUrl: string;
   /**
+   * Url for requesting multiple test results
+   */
+  multipleTestResultsUrl?: string;
+  /**
    * Url for searching for tests via examiner records
    */
-  examinerRecordsUrl: string;
+  examinerRecordsUrl?: string;
   /**
    * A time interval in milliseconds that the test submission retries
    */
