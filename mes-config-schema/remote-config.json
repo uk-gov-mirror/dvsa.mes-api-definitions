@@ -137,6 +137,10 @@
           "description": "Url for submitting a test",
           "type": "string"
         },
+        "multipleTestResultsUrl": {
+          "description": "Url for requesting multiple test results",
+          "type": "string"
+        },
         "examinerRecordsUrl": {
           "description": "Url for searching for tests via examiner records",
           "type": "string"
@@ -148,8 +152,7 @@
       },
       "required": [
         "testSubmissionUrl",
-        "autoSendInterval",
-        "examinerRecordsUrl"
+        "autoSendInterval"
       ]
     },
     "user": {
