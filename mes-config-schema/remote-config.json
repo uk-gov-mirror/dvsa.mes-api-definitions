@@ -1,7 +1,7 @@
 {
   "definitions": {
     "examinerRole": {
-      "description": "Role of the user who uses the the App",
+      "description": "Role of the user who uses the App",
       "type": "string",
       "enum": [
         "LDTM",
@@ -10,7 +10,7 @@
       ]
     },
     "examinerRoleDescription": {
-      "description": "Description of the Role of the user who uses the the App",
+      "description": "Description of the Role of the user who uses the App",
       "type": "string",
       "enum": [
         "Local Driving Test Manager",
@@ -304,7 +304,6 @@
     }
   },
   "required": [
-    "googleAnalyticsId",
     "approvedDeviceIdentifiers",
     "role",
     "journal",
