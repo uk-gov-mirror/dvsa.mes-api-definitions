@@ -11,6 +11,7 @@ on:
           - mes-config-schema
           - mes-driver-schema
           - mes-journal-schema
+          - mes-mot-schema
           - mes-search-schema
           - mes-test-schema
 

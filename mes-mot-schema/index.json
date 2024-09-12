@@ -1,0 +1,42 @@
+{
+  "title": "MotHistory Schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "registration",
+    "status"
+  ],
+  "properties": {
+    "registration": {
+      "description": "Vehicle registration number",
+      "type": "string"
+    },
+    "make": {
+      "description": "Vehicle make",
+      "type": "string"
+    },
+    "model": {
+      "description": "Vehicle model",
+      "type": "string"
+    },
+    "expiryDate": {
+      "description": "MOT test expiry date",
+      "type": ["string", "null"]
+    },
+    "status": {
+      "$ref": "#/definitions/MotStatusCodes"
+    }
+  },
+  "definitions": {
+    "MotStatusCodes": {
+      "description": "MOT status codes",
+      "type": "string",
+      "enum": [
+        "VALID",
+        "NOT_VALID",
+        "NO_DETAILS",
+        "AGE_EXEMPTION"
+      ]
+    }
+  }
+}
