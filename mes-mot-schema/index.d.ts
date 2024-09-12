@@ -10,7 +10,7 @@
  */
 export type MotStatusCodes = "VALID" | "NOT_VALID" | "NO_DETAILS" | "AGE_EXEMPTION";
 
-export interface MotHistorySchema {
+export interface MotHistory {
   /**
    * Vehicle registration number
    */

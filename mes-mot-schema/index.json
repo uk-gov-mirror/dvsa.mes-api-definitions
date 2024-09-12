@@ -1,5 +1,5 @@
 {
-  "title": "MotHistory Schema",
+  "title": "MotHistory",
   "type": "object",
   "additionalProperties": false,
   "required": [
