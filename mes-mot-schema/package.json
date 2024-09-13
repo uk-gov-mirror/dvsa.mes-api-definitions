@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/dvsa/mes-api-definitions",
   "devDependencies": {
-    "json-schema-to-typescript": "^11.0.2"
+    "json-schema-to-typescript": "^15.0.2"
   }
 }
