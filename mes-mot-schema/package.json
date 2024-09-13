@@ -1,6 +1,6 @@
 {
   "name": "@dvsa/mes-mot-schema",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JSON Schema of mot history data",
   "types": "index.d.ts",
   "scripts": {
