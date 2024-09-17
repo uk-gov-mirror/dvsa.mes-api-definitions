@@ -73,7 +73,6 @@ export type ActivityCode =
   | "5"
   | "6"
   | "11"
-  | "12"
   | "20"
   | "21"
   | "22"
@@ -119,7 +118,8 @@ export type ActivityCode =
   | "81"
   | "82"
   | "83"
-  | "88";
+  | "88"
+  | "89";
 /**
  * The method of communication by which the candidate agrees to receive their results
  *
