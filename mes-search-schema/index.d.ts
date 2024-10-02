@@ -61,7 +61,8 @@ export type ActivityCode =
   | "81"
   | "82"
   | "83"
-  | "88";
+  | "88"
+  | "89";
 
 export interface SearchResultTestSchema {
   /**
