@@ -301,6 +301,7 @@ export interface TestResultCatAM1Schema {
   examinerKeyed: number;
   passCompletion?: PassCompletion;
   vehicleDetails?: VehicleDetails;
+  userExitedApp?: UserExitedApp;
   testData?: TestData;
 }
 /**
@@ -776,6 +777,19 @@ export interface VehicleDetails {
   previouslySearchedRegNumbers?: string[];
   gearboxCategory?: GearboxCategory;
   schoolBike?: SchoolBike;
+}
+/**
+ * User disabled ASAM and exited the app
+ */
+export interface UserExitedApp {
+  /**
+   * Reason why the user has exited the app
+   */
+  exitReason?: string;
+  /**
+   * Flag to indicate if the user has exited the app
+   */
+  exitFlag: boolean;
 }
 /**
  * Data associated with the test

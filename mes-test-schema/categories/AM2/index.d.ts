@@ -1137,3 +1137,19 @@ export interface EyesightTest {
   seriousFault?: boolean;
   faultComments?: FaultComments;
 }
+/**
+ * User disabled ASAM and exited the app
+ *
+ * This interface was referenced by `TestResultCatAM2Schema`'s JSON-Schema
+ * via the `definition` "userExitedApp".
+ */
+export interface UserExitedApp {
+  /**
+   * Reason why the user has exited the app
+   */
+  exitReason?: string;
+  /**
+   * Flag to indicate if the user has exited the app
+   */
+  exitFlag: boolean;
+}
