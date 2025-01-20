@@ -510,6 +510,9 @@
     "trainerDetails": {
       "$ref": "#/definitions/trainerDetails"
     },
+    "userExitedApp": {
+      "$ref": "../common/index.json#/definitions/userExitedApp"
+    },
     "testData": {
       "$ref": "#/definitions/testData"
     }

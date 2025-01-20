@@ -240,6 +240,7 @@ export interface TestResultCatADI3Schema {
   passCompletion?: PassCompletion;
   vehicleDetails?: VehicleDetails;
   trainerDetails?: TrainerDetails;
+  userExitedApp?: UserExitedApp;
   testData?: TestData;
 }
 /**
@@ -721,6 +722,19 @@ export interface TrainerDetails {
    * Trainer registration number (PRN)
    */
   trainerRegistrationNumber?: number;
+}
+/**
+ * User disabled ASAM and exited the app
+ */
+export interface UserExitedApp {
+  /**
+   * Reason why the user has exited the app
+   */
+  exitReason?: string;
+  /**
+   * Flag to indicate if the user has exited the app
+   */
+  exitFlag: boolean;
 }
 /**
  * Data associated with the test

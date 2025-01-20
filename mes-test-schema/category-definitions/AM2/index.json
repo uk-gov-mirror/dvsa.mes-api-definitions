@@ -1123,6 +1123,9 @@
       },
       "additionalProperties": false
     },
+    "userExitedApp": {
+      "$ref": "../common/index.json#/definitions/userExitedApp"
+    },
     "testData": {
       "description": "Data associated with the test",
       "type": "object",
