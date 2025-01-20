@@ -319,6 +319,7 @@ export interface TestResultCommonSchema {
   examinerKeyed: number;
   passCompletion?: PassCompletion;
   vehicleDetails?: VehicleDetails;
+  userExitedApp?: UserExitedApp;
   testData?: TestData;
 }
 /**
@@ -800,6 +801,22 @@ export interface VehicleDetails {
    */
   previouslySearchedRegNumbers?: string[];
   gearboxCategory?: GearboxCategory;
+}
+/**
+ * User disabled ASAM and exited the app
+ *
+ * This interface was referenced by `TestResultCommonSchema`'s JSON-Schema
+ * via the `definition` "userExitedApp".
+ */
+export interface UserExitedApp {
+  /**
+   * Reason why the user has exited the app
+   */
+  exitReason?: string;
+  /**
+   * Flag to indicate if the user has exited the app
+   */
+  exitFlag: boolean;
 }
 /**
  * Data associated with the test
