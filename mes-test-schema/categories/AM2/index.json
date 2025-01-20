@@ -2251,24 +2251,6 @@
 			},
 			"additionalProperties": false
 		},
-		"userExitedApp": {
-			"description": "User disabled ASAM and exited the app",
-			"type": "object",
-			"properties": {
-				"exitReason": {
-					"description": "Reason why the user has exited the app",
-					"type": "string"
-				},
-				"exitFlag": {
-					"description": "Flag to indicate if the user has exited the app",
-					"type": "boolean"
-				}
-			},
-			"additionalProperties": false,
-			"required": [
-				"exitFlag"
-			]
-		},
 		"testData": {
 			"description": "Data associated with the test",
 			"type": "object",
@@ -4467,6 +4449,24 @@
 					]
 				}
 			}
+		},
+		"userExitedApp": {
+			"description": "User disabled ASAM and exited the app",
+			"type": "object",
+			"properties": {
+				"exitReason": {
+					"description": "Reason why the user has exited the app",
+					"type": "string"
+				},
+				"exitFlag": {
+					"description": "Flag to indicate if the user has exited the app",
+					"type": "boolean"
+				}
+			},
+			"additionalProperties": false,
+			"required": [
+				"exitFlag"
+			]
 		},
 		"testData": {
 			"description": "Data associated with the test",
