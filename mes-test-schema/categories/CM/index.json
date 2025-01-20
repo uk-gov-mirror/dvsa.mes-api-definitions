@@ -14,6 +14,24 @@
 			"description": "Indicates whether or not the vehicle has dual controls fitted",
 			"type": "boolean"
 		},
+		"userExitedApp": {
+			"description": "User disabled ASAM and exited the app",
+			"type": "object",
+			"properties": {
+				"exitReason": {
+					"description": "Reason why the user has exited the app",
+					"type": "string"
+				},
+				"exitFlag": {
+					"description": "Flag to indicate if the user has exited the app",
+					"type": "boolean"
+				}
+			},
+			"additionalProperties": false,
+			"required": [
+				"exitFlag"
+			]
+		},
 		"testData": {
 			"additionalProperties": false,
 			"description": "Data associated with the test",
@@ -1856,6 +1874,9 @@
 		},
 		"vehicleDetails": {
 			"$ref": "#/definitions/vehicleDetails"
+		},
+		"userExitedApp": {
+			"$ref": "#/definitions/userExitedApp"
 		},
 		"testData": {
 			"$ref": "#/definitions/testData"
