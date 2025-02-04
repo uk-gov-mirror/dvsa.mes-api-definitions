@@ -6,7 +6,7 @@
  */
 
 /**
- * Role of the user who uses the the App
+ * Role of the user who uses the App
  */
 export type ExaminerRole = "LDTM" | "DE" | "DLG";
 
@@ -50,6 +50,7 @@ export interface RemoteConfig {
   vehicle?: Vehicle;
   mot?: Mot;
   refData?: RefData;
+  usefulLinks?: UsefulLinks;
   /**
    * The number of milliseconds that we wait before a request times out in the App
    */
@@ -206,4 +207,17 @@ export interface RefData {
    * Url which is used for retrieving test centre details from TARS
    */
   testCentreUrl: string;
+}
+/**
+ * List of urls to external resources properties
+ */
+export interface UsefulLinks {
+  /**
+   * Url to driving examination guidance (DT1)
+   */
+  drivingExaminationGuidanceURL: string;
+  /**
+   * Url to DES's accessability statement
+   */
+  accessibilityStatementURL: string;
 }
