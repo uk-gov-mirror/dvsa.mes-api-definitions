@@ -234,6 +234,25 @@
       "required": [
         "testCentreUrl"
       ]
+    },
+    "usefulLinks": {
+      "description": "List of urls to external resources properties",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "drivingExaminationGuidanceURL": {
+          "description": "Url to driving examination guidance (DT1)",
+          "type": "string"
+        },
+        "accessibilityStatementURL": {
+          "description": "Url to DES's accessability statement",
+          "type": "string"
+        }
+      },
+      "required": [
+        "drivingExaminationGuidanceURL",
+        "accessibilityStatementURL"
+      ]
     }
   },
   "$schema": "http://json-schema.org/draft-07/schema#",
@@ -297,6 +316,9 @@
     },
     "refData": {
       "$ref": "#/definitions/refData"
+    },
+    "usefulLinks": {
+      "$ref": "#/definitions/usefulLinks"
     },
     "requestTimeout": {
       "description": "The number of milliseconds that we wait before a request times out in the App",
