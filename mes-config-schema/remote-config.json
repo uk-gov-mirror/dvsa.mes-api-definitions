@@ -235,27 +235,24 @@
         "testCentreUrl"
       ]
     },
-    "usefulLinks": {
-      "description": "List of urls to external resources properties",
-      "type": "array",
-      "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "properties": {
-          "url": {
-            "description": "Url for link",
-            "type": "string"
-          },
-          "displayText": {
-            "description": "Hold text to display as a label for useful links",
-            "type": "string"
-          }
+    "usefulLink": {
+      "description": "External resources property to hold useful link references",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "description": "Url for link",
+          "type": "string"
         },
-        "required": [
-          "url",
-          "displayText"
-        ]
-      }
+        "displayText": {
+          "description": "Hold text to display as a label for useful links",
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "displayText"
+      ]
     }
   },
   "$schema": "http://json-schema.org/draft-07/schema#",
@@ -321,7 +318,11 @@
       "$ref": "#/definitions/refData"
     },
     "usefulLinks": {
-      "$ref": "#/definitions/usefulLinks"
+      "description": "A collection of useful links to display",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/usefulLink"
+      }
     },
     "requestTimeout": {
       "description": "The number of milliseconds that we wait before a request times out in the App",
