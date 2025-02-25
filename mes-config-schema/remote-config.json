@@ -235,23 +235,23 @@
         "testCentreUrl"
       ]
     },
-    "usefulLinks": {
-      "description": "List of urls to external resources properties",
+    "usefulLink": {
+      "description": "External resources property to hold useful link references",
       "type": "object",
       "additionalProperties": false,
       "properties": {
-        "drivingExaminationGuidanceURL": {
-          "description": "Url to driving examination guidance (DT1)",
+        "url": {
+          "description": "Url for link",
           "type": "string"
         },
-        "accessibilityStatementURL": {
-          "description": "Url to DES's accessability statement",
+        "displayText": {
+          "description": "Hold text to display as a label for useful links",
           "type": "string"
         }
       },
       "required": [
-        "drivingExaminationGuidanceURL",
-        "accessibilityStatementURL"
+        "url",
+        "displayText"
       ]
     }
   },
@@ -318,7 +318,11 @@
       "$ref": "#/definitions/refData"
     },
     "usefulLinks": {
-      "$ref": "#/definitions/usefulLinks"
+      "description": "A collection of useful links to display",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/usefulLink"
+      }
     },
     "requestTimeout": {
       "description": "The number of milliseconds that we wait before a request times out in the App",

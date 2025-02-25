@@ -50,7 +50,10 @@ export interface RemoteConfig {
   vehicle?: Vehicle;
   mot?: Mot;
   refData?: RefData;
-  usefulLinks?: UsefulLinks;
+  /**
+   * A collection of useful links to display
+   */
+  usefulLinks?: UsefulLink[];
   /**
    * The number of milliseconds that we wait before a request times out in the App
    */
@@ -209,15 +212,15 @@ export interface RefData {
   testCentreUrl: string;
 }
 /**
- * List of urls to external resources properties
+ * External resources property to hold useful link references
  */
-export interface UsefulLinks {
+export interface UsefulLink {
   /**
-   * Url to driving examination guidance (DT1)
+   * Url for link
    */
-  drivingExaminationGuidanceURL: string;
+  url: string;
   /**
-   * Url to DES's accessability statement
+   * Hold text to display as a label for useful links
    */
-  accessibilityStatementURL: string;
+  displayText: string;
 }
