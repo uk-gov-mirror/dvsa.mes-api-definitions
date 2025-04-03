@@ -336,6 +336,10 @@ export interface TestSlotAttributes {
    */
   specialNeedsArray?: string[];
   /**
+   * Whether the candidate requires an extended test due to special needs
+   */
+  specialNeedsExtendedTest?: boolean;
+  /**
    * Whether this is an extended test
    */
   extendedTest: boolean;
