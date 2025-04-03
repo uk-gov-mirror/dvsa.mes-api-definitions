@@ -917,6 +917,10 @@
 						"type": "string"
 					}
 				},
+				"specialNeedsExtendedTest": {
+					"description": "Whether the candidate requires an extended test due to special needs",
+					"type": "boolean"
+				},
 				"extendedTest": {
 					"description": "Whether this is an extended test",
 					"type": "boolean"
@@ -1060,6 +1064,10 @@
 							"items": {
 								"type": "string"
 							}
+						},
+						"specialNeedsExtendedTest": {
+							"description": "Whether the candidate requires an extended test due to special needs",
+							"type": "boolean"
 						},
 						"extendedTest": {
 							"description": "Whether this is an extended test",
@@ -2241,6 +2249,10 @@
 							"items": {
 								"type": "string"
 							}
+						},
+						"specialNeedsExtendedTest": {
+							"description": "Whether the candidate requires an extended test due to special needs",
+							"type": "boolean"
 						},
 						"extendedTest": {
 							"description": "Whether this is an extended test",
