@@ -17,7 +17,7 @@ on:
 
 jobs:
   publish:
-    uses: dvsa/des-workflow-actions/.github/workflows/publish-package.yaml@repoint-publish
+    uses: dvsa/des-workflow-actions/.github/workflows/publish-package.yaml@main
     with:
       WORKING_DIRECTORY: ${{ inputs.directory }}
       PACKAGE_NAME: ${{ format('{0}/{1}', '@dvsa', inputs.directory) }}
