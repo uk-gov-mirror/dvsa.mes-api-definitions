@@ -22,4 +22,4 @@ jobs:
       WORKING_DIRECTORY: ${{ inputs.directory }}
       PACKAGE_NAME: ${{ format('{0}/{1}', '@dvsa', inputs.directory) }}
     secrets:
-      ACCESS_TOKEN: ${{ secrets.DES_ACCESS_TOKEN }}
+      ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
