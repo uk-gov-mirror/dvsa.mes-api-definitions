@@ -4,8 +4,7 @@
   "description": "JSON Schema of examiner journal data sourced from TARS",
   "types": "index.d.ts",
   "scripts": {
-    "generate": "json2ts -i index.json -o index.d.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "json2ts -i index.json -o index.d.ts"
   },
   "repository": {
     "type": "git",
