@@ -1,6 +1,6 @@
 {
   "name": "@dvsa/mes-driver-schema",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "JSON Schema of candidate driver data sourced from DVLA",
   "types": "index.d.ts",
   "scripts": {
