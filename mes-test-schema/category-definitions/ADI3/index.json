@@ -25,6 +25,9 @@
           "description": "Start time of test",
           "type": "string"
         },
+        "standardsChecksTestLength": {
+          "$ref": "#/definitions/standardsChecksTestLength"
+        },
         "endTime": {
           "description": "End time of test",
           "type": "string"
@@ -401,6 +404,21 @@
         "score": {
           "description": "Overall score for questions",
           "type": "number"
+        }
+      }
+    },
+    "standardsChecksTestLength": {
+      "description": "Data relating to reporting the length of the test in standards checks",
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "testIsTooShort": {
+          "description": "Whether or not the test time is under a certain time threshold",
+          "type": "boolean"
+        },
+        "reasonForTestBeingTooShort": {
+          "description": "Reason for test being too short",
+          "type": "string"
         }
       }
     },

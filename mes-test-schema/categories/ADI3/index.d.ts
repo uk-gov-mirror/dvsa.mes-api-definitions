@@ -756,6 +756,7 @@ export interface TestData {
    * Start time of test
    */
   startTime?: string;
+  standardsChecksTestLength?: StandardsChecksTestLength;
   /**
    * End time of test
    */
@@ -866,4 +867,20 @@ export interface Review {
    * ADI3 have different levels of passes represented in grade form
    */
   grade?: string;
+}
+/**
+ * Data relating to reporting the length of the test in standards checks
+ *
+ * This interface was referenced by `TestResultCatADI3Schema`'s JSON-Schema
+ * via the `definition` "standardsChecksTestLength".
+ */
+export interface StandardsChecksTestLength {
+  /**
+   * Whether or not the test time is under a certain time threshold
+   */
+  testIsTooShort?: boolean;
+  /**
+   * Reason for test being too short
+   */
+  reasonForTestBeingTooShort?: string;
 }
