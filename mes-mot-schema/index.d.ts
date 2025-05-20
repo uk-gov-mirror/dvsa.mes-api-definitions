@@ -5,6 +5,11 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
+/**
+ * MOT status codes
+ */
+export type MotStatusCodes = "Valid" | "Not valid" | "No details" | "Age exemption";
+
 export interface MotHistory {
   /**
    * Vehicle registration number
@@ -23,14 +28,4 @@ export interface MotHistory {
    */
   expiryDate?: string | null;
   status: MotStatusCodes;
-}
-
-/**
- * MOT status codes
- */
-export const enum MotStatusCodes {
-  VALID = "Valid",
-  NOT_VALID = "Not valid",
-  NO_DETAILS = "No details",
-  AGE_EXEMPTION = "Age exemption"
 }

@@ -37,12 +37,6 @@
         "Not valid",
         "No details",
         "Age exemption"
-      ],
-      "tsEnumNames": [
-        "VALID",
-        "NOT_VALID",
-        "NO_DETAILS",
-        "AGE_EXEMPTION"
       ]
     }
   }
