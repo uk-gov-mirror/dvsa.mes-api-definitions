@@ -756,6 +756,10 @@ export interface TestData {
    * Start time of test
    */
   startTime?: string;
+  /**
+   * Whether or not the examiner has declared that they have confirmed the start and end times of the test
+   */
+  startEndTimeConfirmed?: boolean;
   standardsChecksTestLength?: StandardsChecksTestLength;
   /**
    * End time of test

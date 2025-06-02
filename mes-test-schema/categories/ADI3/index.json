@@ -349,6 +349,10 @@
 					"description": "Start time of test",
 					"type": "string"
 				},
+				"startEndTimeConfirmed": {
+					"description": "Whether or not the examiner has declared that they have confirmed the start and end times of the test",
+					"type": "boolean"
+				},
 				"standardsChecksTestLength": {
 					"description": "Data relating to reporting the length of the test in standards checks",
 					"type": "object",
@@ -3029,6 +3033,10 @@
 				"startTime": {
 					"description": "Start time of test",
 					"type": "string"
+				},
+				"startEndTimeConfirmed": {
+					"description": "Whether or not the examiner has declared that they have confirmed the start and end times of the test",
+					"type": "boolean"
 				},
 				"standardsChecksTestLength": {
 					"description": "Data relating to reporting the length of the test in standards checks",
