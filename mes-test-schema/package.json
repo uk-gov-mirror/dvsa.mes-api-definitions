@@ -1,6 +1,6 @@
 {
   "name": "@dvsa/mes-test-schema",
-  "version": "3.45.0",
+  "version": "3.46.0",
   "description": "Domain model for data associated with tests administered by the Driving Examiner Services project",
   "scripts": {
     "generate": "ts-node generateSchemas.ts generate",
