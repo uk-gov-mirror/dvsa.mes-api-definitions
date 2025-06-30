@@ -216,6 +216,10 @@ export interface RefData {
  */
 export interface UsefulLink {
   /**
+   * Unique identifier for the useful link
+   */
+  id: string;
+  /**
    * Url for link
    */
   url: string;
