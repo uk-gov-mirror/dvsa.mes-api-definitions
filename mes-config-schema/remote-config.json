@@ -240,6 +240,10 @@
       "type": "object",
       "additionalProperties": false,
       "properties": {
+        "id": {
+          "description": "Unique identifier for the useful link",
+          "type": "string"
+        },
         "url": {
           "description": "Url for link",
           "type": "string"
@@ -250,6 +254,7 @@
         }
       },
       "required": [
+        "id",
         "url",
         "displayText"
       ]
